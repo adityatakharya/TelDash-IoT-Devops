@@ -1,0 +1,13 @@
+# Node
+node_modules/
+.env
+
+# OS
+.DS_Store
+
+# Java
+/target/
+*.log
+
+# Maven wrapper
+.mvn/wrapper/maven-wrapper.jar
