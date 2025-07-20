@@ -1,8 +1,9 @@
 const {Kafka} = require('kafkajs')
+require('dotenv').config();
 
 const kafka = new Kafka({
     clientId: "TelDash",
-    brokers: ["localhost:9092"],
+    brokers: [process.env.KAFKA_BROKER_URL],
 })
 
 const producer = kafka.producer();

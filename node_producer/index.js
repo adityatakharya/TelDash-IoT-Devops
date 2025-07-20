@@ -2,6 +2,8 @@ const {producer} = require('./services/kafka')
 const {generateLogEvent} = require('./utils/generateEvent')
 
 const run = async () => {
+    console.log("BROKE URL", process.env.KAFKA_BROKER_URL)
+    
     await producer.connect();
 
     setInterval(async () => {
